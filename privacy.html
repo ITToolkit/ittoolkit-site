@@ -1,342 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy — ITToolkit</title>
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: #f8fafc;
-      color: #0f172a;
-      line-height: 1.7;
-      font-size: 16px;
-    }
-    header {
-      background: linear-gradient(135deg, #223d79 0%, #2d4ea4 100%);
-      padding: 52px 24px 44px;
-      text-align: center;
-    }
-    header img {
-      width: 88px;
-      height: 88px;
-      object-fit: contain;
-      margin: 0 auto 18px;
-      display: block;
-      filter: drop-shadow(0 8px 24px rgba(0,0,0,0.22));
-      border-radius: 22px;
-    }
-    header h1 {
-      color: #fff;
-      font-size: 30px;
-      font-weight: 800;
-      margin-bottom: 4px;
-      letter-spacing: -0.02em;
-    }
-    header .subtitle {
-      color: rgba(255,255,255,0.78);
-      font-size: 16px;
-      font-weight: 500;
-    }
-    header .updated {
-      display: inline-block;
-      margin-top: 16px;
-      background: rgba(255,255,255,0.15);
-      color: rgba(255,255,255,0.92);
-      font-size: 13px;
-      padding: 5px 16px;
-      border-radius: 20px;
-    }
-    .container {
-      max-width: 780px;
-      margin: 0 auto;
-      padding: 0 24px 80px;
-    }
-    .summary-bar {
-      background: #eef4ff;
-      border: 1px solid #cad8ff;
-      border-radius: 14px;
-      padding: 20px 24px;
-      margin: 32px 0 0;
-    }
-    .summary-bar p {
-      color: #24408a;
-      font-size: 15px;
-      font-weight: 500;
-      line-height: 1.6;
-    }
-    section { margin-top: 42px; }
-    h2 {
-      font-size: 20px;
-      font-weight: 800;
-      color: #0f172a;
-      padding-bottom: 10px;
-      border-bottom: 2px solid #2d4ea4;
-      margin-bottom: 16px;
-    }
-    h3 {
-      font-size: 15px;
-      font-weight: 700;
-      color: #0f172a;
-      margin: 18px 0 8px;
-    }
-    p {
-      color: #334155;
-      margin-bottom: 14px;
-      font-size: 15px;
-    }
-    ul { padding-left: 0; margin-bottom: 14px; list-style: none; }
-    ul li {
-      color: #334155;
-      font-size: 15px;
-      padding: 5px 0 5px 24px;
-      position: relative;
-    }
-    ul li::before {
-      content: "•";
-      color: #2d4ea4;
-      font-weight: 700;
-      position: absolute;
-      left: 6px;
-    }
-    .highlight {
-      background: #f0fdf4;
-      border-left: 4px solid #16a34a;
-      border-radius: 0 10px 10px 0;
-      padding: 14px 18px;
-      margin: 16px 0;
-    }
-    .highlight p { color: #166534; margin-bottom: 0; font-weight: 500; }
-    .contact-card {
-      background: linear-gradient(135deg, #eef4ff, #f8fafc);
-      border: 1px solid #cad8ff;
-      border-radius: 16px;
-      padding: 28px;
-      margin-top: 16px;
-      text-align: center;
-    }
-    .contact-card .brand {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 12px;
-      margin-bottom: 16px;
-    }
-    .contact-card .brand img {
-      width: 40px;
-      height: 40px;
-      object-fit: contain;
-      border-radius: 10px;
-    }
-    .contact-card .brand span {
-      font-size: 20px;
-      font-weight: 800;
-      color: #0f172a;
-    }
-    .contact-card .email {
-      font-size: 18px;
-      font-weight: 700;
-      color: #2d4ea4;
-      display: block;
-      margin: 8px 0 12px;
-      text-decoration: none;
-    }
-    .contact-card .email:hover { text-decoration: underline; }
-    .contact-card p { color: #64748b; font-size: 14px; margin: 0; }
-    footer {
-      background: #0f172a;
-      padding: 36px 24px;
-      text-align: center;
-    }
-    .footer-brand {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      margin-bottom: 12px;
-    }
-    .footer-brand img {
-      width: 32px;
-      height: 32px;
-      object-fit: contain;
-      border-radius: 8px;
-    }
-    .footer-brand span {
-      color: #fff;
-      font-size: 16px;
-      font-weight: 700;
-    }
-    .footer-copy {
-      color: #94a3b8;
-      font-size: 13px;
-      margin-bottom: 8px;
-    }
-    .footer-links {
-      font-size: 13px;
-    }
-    .footer-links a {
-      color: #94a3b8;
-      text-decoration: none;
-      margin: 0 8px;
-    }
-    .footer-links a:hover { color: #fff; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Privacy Policy — ITToolkit</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+background:#f8fafc;
+color:#0f172a;
+line-height:1.7;
+font-size:16px
+}
+header{
+background:linear-gradient(135deg,#223d79 0%,#2d4ea4 100%);
+padding:52px 24px 44px;
+text-align:center
+}
+header img{
+width:88px;
+height:88px;
+object-fit:contain;
+margin:0 auto 18px;
+display:block;
+border-radius:22px
+}
+header h1{
+color:#fff;
+font-size:30px;
+font-weight:800;
+margin-bottom:4px
+}
+header .subtitle{
+color:rgba(255,255,255,.78);
+font-size:16px
+}
+.updated{
+display:inline-block;
+margin-top:16px;
+background:rgba(255,255,255,.15);
+color:#fff;
+font-size:13px;
+padding:5px 16px;
+border-radius:20px
+}
+.container{
+max-width:780px;
+margin:auto;
+padding:0 24px 80px
+}
+section{margin-top:42px}
+h2{
+font-size:20px;
+font-weight:800;
+border-bottom:2px solid #2d4ea4;
+padding-bottom:10px;
+margin-bottom:16px
+}
+p{margin-bottom:14px;color:#334155}
+ul{list-style:none;padding-left:0;margin-bottom:14px}
+ul li{padding:5px 0 5px 22px;position:relative}
+ul li::before{content:"•";position:absolute;left:6px;color:#2d4ea4}
+footer{
+background:#0f172a;
+padding:36px 24px;
+text-align:center;
+color:#94a3b8
+}
+</style>
 </head>
+
 <body>
 
 <header>
-  <img src="ittoolkit_playstore_icon_512.png" alt="ITToolkit Logo" />
-  <h1>ITToolkit Privacy Policy</h1>
-  <p class="subtitle">Clear, simple information about what the app accesses and why</p>
-  <div class="updated">Last Updated: 8 March 2026</div>
+<img src="ittoolkit_playstore_icon_512.png" alt="ITToolkit Logo">
+<h1>ITToolkit Privacy Policy</h1>
+<p class="subtitle">Clear information about what the app accesses and why</p>
+<div class="updated">Last Updated: 9 March 2026</div>
 </header>
 
 <div class="container">
 
-  <div class="summary-bar">
-    <p><strong>In plain English:</strong> ITToolkit is a utility app. Most data stays on your device. The app accesses network, Wi‑Fi, notifications, and location-related information only to power features you choose to use. It also stores some information locally on your device, such as lookup history, saved hosts, SSL watchlists, settings, and Pro status.</p>
-  </div>
+<section>
+<h2>1. Introduction</h2>
+<p>This Privacy Policy explains how <strong>ITToolkit</strong> handles information when you use the application.</p>
+<p>ITToolkit is a network and troubleshooting toolkit providing features such as DNS lookups, port scanning, traceroute, SSL checks, HTTP inspection, Wi‑Fi analysis, DNS propagation checks and CSV exports.</p>
+<p>The developer of ITToolkit does not operate servers that collect or store personal user data from the app. Most information used by the app remains on the device.</p>
+</section>
 
-  <section>
-    <h2>1. Introduction</h2>
-    <p>This Privacy Policy explains how <strong>ITToolkit</strong> handles information when you use the app.</p>
-    <p>ITToolkit is designed for network and troubleshooting tasks such as DNS lookups, port checks, traceroute, SSL inspection, HTTP inspection, Wi‑Fi analysis, DNS propagation checks, CSV export, and optional Pro features.</p>
-    <p>By using ITToolkit, you agree to this Privacy Policy.</p>
-  </section>
+<section>
+<h2>2. Information the App May Access</h2>
+<p>Depending on which features you use, ITToolkit may access:</p>
+<ul>
+<li><strong>Network information</strong> such as hostnames, domains, IP addresses, URLs and ports entered by the user.</li>
+<li><strong>Wi‑Fi information</strong> including SSID, BSSID, signal strength, frequency and scan results when the Wi‑Fi scanner is used.</li>
+<li><strong>Location‑related information</strong> used by Android to support Wi‑Fi scanning and to optionally display location context such as region or country.</li>
+<li><strong>App usage and settings</strong> including preferences, onboarding completion, custom DNS settings, free usage counters and Pro purchase status.</li>
+<li><strong>User‑entered content</strong> such as saved hosts, bookmarks, lookup history and SSL watchlist entries.</li>
+</ul>
+<p>ITToolkit does not continuously track location and does not store location history. Location access is only used when required for Wi‑Fi related functionality.</p>
+</section>
 
-  <section>
-    <h2>2. What ITToolkit Accesses</h2>
-    <p>Depending on which features you use, ITToolkit may access the following categories of information:</p>
-    <ul>
-      <li><strong>Network and internet information</strong>, such as hostnames, domains, IP addresses, URLs, open ports, certificate details, resolver responses, and network status, in order to perform the tool you requested.</li>
-      <li><strong>Wi‑Fi and nearby network information</strong>, such as SSID, BSSID, signal strength, frequency, and scan results, when you use the Wi‑Fi scanner.</li>
-      <li><strong>Location-related information</strong>, including your device’s current location and reverse-geocoded area details, only when you use Wi‑Fi features that require Android location access.</li>
-      <li><strong>App usage and settings</strong>, such as onboarding completion, dark mode preference, custom DNS preference, free usage counters, and Pro purchase state.</li>
-      <li><strong>User-entered content</strong>, such as hosts, domains, URLs, saved bookmarks, lookup history, SSL watchlist entries, and exported CSV content.</li>
-    </ul>
-    <div class="highlight">
-      <p>ITToolkit does not ask for contacts, microphone, camera, photos, SMS, or background location access.</p>
-    </div>
-  </section>
+<section>
+<h2>3. Data Stored Locally on Your Device</h2>
+<p>Some information is stored locally on your device so the app can function properly.</p>
+<ul>
+<li>Lookup history and tool results</li>
+<li>Saved hosts and bookmarks</li>
+<li>SSL certificate watchlist entries</li>
+<li>App preferences and settings</li>
+<li>Free usage counters and Pro unlock status</li>
+<li>CSV files exported to the device Downloads folder</li>
+</ul>
+<p>This information remains on your device unless you delete it, clear app data, or uninstall the application.</p>
+<p>Exported files are stored only on the user’s device and are not transmitted to the developer.</p>
+</section>
 
-  <section>
-    <h2>3. What Is Stored Locally on Your Device</h2>
-    <p>ITToolkit stores certain information locally on your device so app features work properly. This may include:</p>
-    <ul>
-      <li>Lookup history and tool results you choose to run</li>
-      <li>Saved hosts and bookmarks</li>
-      <li>SSL watchlist entries for expiry alerts</li>
-      <li>App settings and preferences</li>
-      <li>Free tool usage counts and Pro unlock status</li>
-      <li>CSV files you export to your device’s Downloads folder</li>
-    </ul>
-    <p>This local information is stored on your device and is not sold by us.</p>
-  </section>
+<section>
+<h2>4. Permissions Used</h2>
 
-  <section>
-    <h2>4. Permissions Used by the App</h2>
+<h3>Internet</h3>
+<p>Required for network diagnostic tools including DNS lookups, SSL checks, HTTP inspection, port scans and traceroute.</p>
 
-    <h3>Internet Access</h3>
-    <p>Used to perform network tools such as DNS lookups, port checks, traceroute, SSL checks, HTTP inspection, DNS propagation checks, speed tests, Google Play billing, and in-app review.</p>
+<h3>Network and Wi‑Fi State</h3>
+<p>Used to detect connectivity status and read Wi‑Fi network information for diagnostic tools.</p>
 
-    <h3>Network State and Wi‑Fi State</h3>
-    <p>Used to detect connection status, read current Wi‑Fi details, and support Wi‑Fi scanning and related diagnostics.</p>
+<h3>Location</h3>
+<p>Android requires location permission to perform Wi‑Fi scanning. ITToolkit may also use this permission to display contextual location information for Wi‑Fi analysis features.</p>
 
-    <h3>Precise and Approximate Location</h3>
-    <p>Android requires location permission for Wi‑Fi scanning. ITToolkit also uses location in the Wi‑Fi screen to show current coordinates and reverse-geocoded area information on your device. This access is feature-driven and only used when relevant app tools are opened or run.</p>
+<h3>Notifications</h3>
+<p>Used for optional SSL certificate expiry alerts for domains added to the watchlist.</p>
 
-    <h3>Notifications</h3>
-    <p>Used for optional SSL certificate expiry alerts for domains you add to the watchlist.</p>
-  </section>
+</section>
 
-  <section>
-    <h2>5. How Information Is Used</h2>
-    <p>ITToolkit uses accessed information only to provide the features you choose to use, including:</p>
-    <ul>
-      <li>Running diagnostic and networking tools you request</li>
-      <li>Displaying nearby Wi‑Fi and current network information</li>
-      <li>Saving history, bookmarks, and watchlists on your device</li>
-      <li>Creating CSV exports on your device</li>
-      <li>Sending optional SSL expiry notifications</li>
-      <li>Enabling Pro purchase and restore functionality through Google Play</li>
-      <li>Allowing you to submit an in-app review through Google Play</li>
-    </ul>
-  </section>
+<section>
+<h2>5. How Information Is Used</h2>
+<ul>
+<li>Running the diagnostic tools requested by the user</li>
+<li>Displaying Wi‑Fi and network information</li>
+<li>Saving local preferences and history</li>
+<li>Creating CSV exports on the device</li>
+<li>Sending optional SSL expiry notifications</li>
+<li>Supporting Google Play billing and purchase restoration</li>
+<li>Allowing optional in‑app reviews through Google Play</li>
+</ul>
+</section>
 
-  <section>
-    <h2>6. Network Requests and External Services</h2>
-    <p>Because ITToolkit is a network utility app, it sends requests from your device to the systems needed to complete the tool you selected. For example:</p>
-    <ul>
-      <li>DNS and DNS propagation tools contact DNS resolver endpoints</li>
-      <li>HTTP Inspector connects to the URL you enter</li>
-      <li>SSL Checker connects to the host you enter</li>
-      <li>Port Scan and Traceroute connect to the host or IP you enter</li>
-      <li>Wi‑Fi speed test uses remote test endpoints</li>
-      <li>Pro purchase and restore use Google Play Billing</li>
-      <li>In-app review uses Google Play review services</li>
-    </ul>
-    <p>These network requests are necessary for the app to function. The systems you query may receive standard connection metadata from your device, such as IP address and request details, as part of normal internet communication.</p>
-    <p>ITToolkit itself is not designed to sell your data or use it for advertising.</p>
-  </section>
+<section>
+<h2>6. External Network Requests</h2>
+<p>Because ITToolkit is a network utility app, it sends requests from your device to the systems required to perform the tool you selected.</p>
+<ul>
+<li>DNS tools query DNS resolvers</li>
+<li>HTTP inspector connects to URLs entered by the user</li>
+<li>SSL checks connect to target hosts</li>
+<li>Port scans and traceroute connect to target IPs or domains</li>
+<li>Google Play services handle billing and review features</li>
+</ul>
+<p>These requests are necessary for the functionality of the tools.</p>
+</section>
 
-  <section>
-    <h2>7. Data Sharing</h2>
-    <p>We do not sell your personal data.</p>
-    <p>We do not intentionally share your data with third parties for advertising purposes.</p>
-    <p>However, when you use app tools that connect to external systems, data is sent directly from your device to the relevant destination needed for the tool to work, such as a host you entered, a DNS resolver, or Google Play services for purchases and reviews.</p>
-  </section>
+<section>
+<h2>7. Data Sharing</h2>
+<p>ITToolkit does not sell personal data.</p>
+<p>The app does not intentionally share user data with third parties for advertising or tracking.</p>
+<p>Network tools may connect directly to external systems specified by the user as part of normal internet communication.</p>
+</section>
 
-  <section>
-    <h2>8. Data Retention</h2>
-    <p>Data stored locally in ITToolkit remains on your device until you delete it, clear app data, uninstall the app, or remove it through app controls where available.</p>
-    <p>Exported CSV files remain in your device storage until you delete them.</p>
-  </section>
+<section>
+<h2>8. Security</h2>
+<p>Reasonable measures are taken to protect locally stored information. However, no system can be guaranteed completely secure.</p>
+</section>
 
-  <section>
-    <h2>9. Security</h2>
-    <p>We use reasonable measures within the app to protect locally stored data and app functionality. However, no device, network connection, or internet transmission can be guaranteed to be completely secure.</p>
-  </section>
+<section>
+<h2>9. Your Rights (UK GDPR)</h2>
+<p>If you are located in the United Kingdom you may have rights under UK data protection law including the right to request access, correction or deletion of personal data where applicable.</p>
+</section>
 
-  <section>
-    <h2>10. Your Rights (UK GDPR)</h2>
-    <p>If you are in the United Kingdom, you may have rights under UK data protection law, including the right to request access, correction, deletion, or restriction of personal data where applicable.</p>
-    <p>Because ITToolkit mainly stores information locally on your device and is designed to minimise developer-held data, these rights may be limited in practice unless you contact us about specific support-related information.</p>
-  </section>
+<section>
+<h2>10. Children's Privacy</h2>
+<p>ITToolkit is not intended for children under the age of 13.</p>
+</section>
 
-  <section>
-    <h2>11. Children’s Privacy</h2>
-    <p>ITToolkit is not directed to children under 13 and is not designed for child use.</p>
-  </section>
+<section>
+<h2>11. Changes to This Policy</h2>
+<p>This policy may be updated from time to time. The updated date at the top of this page will reflect any changes.</p>
+</section>
 
-  <section>
-    <h2>12. Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. When we do, we will update the “Last Updated” date at the top of this page.</p>
-  </section>
-
-  <section>
-    <h2>13. Contact</h2>
-    <div class="contact-card">
-      <div class="brand">
-        <img src="ittoolkit_playstore_icon_512.png" alt="ITToolkit Logo" />
-        <span>ITToolkit</span>
-      </div>
-      <a class="email" href="mailto:support@ittoolkit.app">support@ittoolkit.app</a>
-      <p>If you have any questions about this Privacy Policy, please contact us using the email above.</p>
-    </div>
-  </section>
+<section>
+<h2>12. Contact</h2>
+<p>If you have any questions about this Privacy Policy please contact:</p>
+<p><strong>Email:</strong> support@ittoolkit.app</p>
+</section>
 
 </div>
 
 <footer>
-  <div class="footer-brand">
-    <img src="ittoolkit_playstore_icon_512.png" alt="ITToolkit Logo" />
-    <span>ITToolkit</span>
-  </div>
-  <div class="footer-copy">© 2026 ITToolkit. All rights reserved.</div>
-  <div class="footer-links">
-    <a href="privacy.html">Privacy Policy</a>
-  </div>
+<p>© 2026 ITToolkit</p>
 </footer>
 
 </body>
