@@ -319,7 +319,7 @@ footer p {
     <h2><span class="section-num">01</span> Introduction</h2>
     <p>This Privacy Policy describes how <strong>ITToolkit</strong> ("the app", "we") handles information when you use the application on your Android device.</p>
     <p>ITToolkit is a professional network diagnostics toolkit providing DNS lookups, port scanning, traceroute, SSL certificate inspection, HTTP analysis, Wi&#8209;Fi diagnostics, DNS propagation checking and CSV data export.</p>
-    <p>The developer of ITToolkit does not operate servers that collect or store personal user data. The majority of information processed by the app remains on your device at all times.</p>
+    <p>ITToolkit is designed so that the main diagnostic results, preferences and saved items are stored on your device. Some limited data may also be processed by third-party services such as Google Play Billing, Firebase Analytics and Firebase Crashlytics as described in this policy.</p>
   </section>
 
   <!-- ── 2. INFORMATION WE ACCESS ── -->
@@ -329,12 +329,12 @@ footer p {
     <ul>
       <li><strong>Network information</strong> — hostnames, domain names, IP addresses, URLs and port numbers entered by you when running diagnostic tools.</li>
       <li><strong>Wi&#8209;Fi information</strong> — network names (SSIDs), access point identifiers (BSSIDs), signal strength, frequency, channel and nearby network scan results when using the Wi&#8209;Fi Scanner.</li>
-      <li><strong>Location context</strong> — approximate or precise location data used on-device where Android requires it for Wi&#8209;Fi scanning and, optionally, to display regional context such as city or country within the Wi&#8209;Fi diagnostic view.</li>
+      <li><strong>Location-related access</strong> — location-related permissions used on-device where Android requires them for Wi&#8209;Fi scanning and nearby network results.</li>
       <li><strong>App state and settings</strong> — user preferences, onboarding completion status, custom DNS resolver settings, free usage counters and Pro upgrade status.</li>
       <li><strong>User&#8209;entered data</strong> — saved hosts, bookmarks, lookup history and SSL certificate watchlist entries stored at your direction.</li>
       <li><strong>Crash and performance data</strong> — anonymised diagnostic information collected automatically by Firebase Crashlytics and Firebase Analytics (see Section 6).</li>
     </ul>
-    <p>ITToolkit does not track your location continuously and does not retain location history. Location access is used only at the point of Wi&#8209;Fi scanning and is not stored beyond the current session.</p>
+    <p>ITToolkit does not track your location continuously and does not retain location history. Location-related access is used only where needed for Wi&#8209;Fi scanning features and nearby network results.</p>
   </section>
 
   <!-- ── 3. DATA STORED ON DEVICE ── -->
@@ -353,7 +353,7 @@ footer p {
     <p>Data processed by third&#8209;party services such as Firebase Analytics, Firebase Crashlytics and Google Play Billing is retained according to those providers' own retention practices and policies. ITToolkit does not directly control the retention period of data processed by those services.</p>
     <div class="callout">
       <strong>Encrypted Storage</strong>
-      <p>Pro upgrade status and usage data are protected using Android's EncryptedSharedPreferences with AES&#8209;256 encryption, preventing unauthorised access even on rooted devices.</p>
+      <p>Pro upgrade status and usage data are protected using Android's EncryptedSharedPreferences with AES&#8209;256 encryption, helping to prevent unauthorised access.</p>
     </div>
   </section>
 
@@ -368,10 +368,7 @@ footer p {
     <p>Used to detect network connectivity and read Wi&#8209;Fi connection details for diagnostic tools.</p>
 
     <h3>Access Fine Location</h3>
-    <p>Android requires this permission to perform Wi&#8209;Fi network scanning. The app may also use it on-device to display contextual location information within the Wi&#8209;Fi Scanner. Location data is not stored persistently or transmitted to the developer.</p>
-
-    <h3>Access Coarse Location</h3>
-    <p>Used where Android may provide approximate location context related to Wi&#8209;Fi and network features. ITToolkit does not use this permission for continuous tracking and does not retain location history.</p>
+    <p>On some Android versions, this permission is required for Wi&#8209;Fi scanning and nearby network results. ITToolkit does not use this permission for continuous location tracking and does not store location history.</p>
 
     <h3>Nearby Wi&#8209;Fi Devices (Android 13+)</h3>
     <p>Required on Android 13 and above to read Wi&#8209;Fi network names (SSIDs) during scanning. ITToolkit uses this permission only for Wi&#8209;Fi scanning features and not for continuous location tracking.</p>
