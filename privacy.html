@@ -15,14 +15,12 @@ body {
   font-size: 16px;
 }
 
-/* ── Page wrapper ── */
 .page {
   max-width: 800px;
   margin: 0 auto;
   padding: 72px 40px 100px;
 }
 
-/* ── Header ── */
 .doc-header {
   border-bottom: 3px solid #1a1a2e;
   padding-bottom: 32px;
@@ -79,7 +77,6 @@ body {
   color: #1a1a2e;
 }
 
-/* ── Table of contents ── */
 .toc {
   background: #f8fafc;
   border: 1px solid #e2e8f0;
@@ -121,7 +118,6 @@ body {
   text-decoration: underline;
 }
 
-/* ── Sections ── */
 section {
   margin-bottom: 52px;
   scroll-margin-top: 24px;
@@ -182,7 +178,6 @@ ul li::before {
   font-size: 13px;
 }
 
-/* ── Callout box ── */
 .callout {
   background: #f0f7ff;
   border-left: 3px solid #2d4ea4;
@@ -207,7 +202,6 @@ ul li::before {
   margin-bottom: 4px;
 }
 
-/* ── External link ── */
 a {
   color: #2d4ea4;
   text-decoration: none;
@@ -217,7 +211,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* ── Data table ── */
 .data-table {
   width: 100%;
   border-collapse: collapse;
@@ -247,7 +240,6 @@ a:hover {
   background: #f8fafc;
 }
 
-/* ── Footer ── */
 footer {
   margin-top: 72px;
   padding-top: 32px;
@@ -279,7 +271,6 @@ footer p {
 <body>
 <div class="page">
 
-  <!-- ── HEADER ── -->
   <header class="doc-header">
     <div class="doc-header-top">
       <img src="ittoolkit_playstore_icon_512.png" alt="ITToolkit Logo" class="app-logo">
@@ -287,15 +278,14 @@ footer p {
         <p class="app-name">ITToolkit</p>
         <h1>Privacy Policy</h1>
         <div class="doc-meta">
-          <span><strong>Last Updated:</strong> 17 March 2026</span>
-          <span><strong>Version:</strong> 2.0</span>
+          <span><strong>Last Updated:</strong> 6 April 2026</span>
+          <span><strong>Version:</strong> 2.1</span>
           <span><strong>Contact:</strong> support@ittoolkit.app</span>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- ── TABLE OF CONTENTS ── -->
   <nav class="toc">
     <h2>Contents</h2>
     <ol>
@@ -307,123 +297,122 @@ footer p {
       <li><a href="#s6">External Network Requests</a></li>
       <li><a href="#s7">Data Sharing</a></li>
       <li><a href="#s8">Security</a></li>
-      <li><a href="#s9">Your Rights (UK GDPR)</a></li>
+      <li><a href="#s9">Your Rights</a></li>
       <li><a href="#s10">Children's Privacy</a></li>
       <li><a href="#s11">Changes to This Policy</a></li>
       <li><a href="#s12">Contact</a></li>
     </ol>
   </nav>
 
-  <!-- ── 1. INTRODUCTION ── -->
   <section id="s1">
     <h2><span class="section-num">01</span> Introduction</h2>
-    <p>This Privacy Policy describes how <strong>ITToolkit</strong> ("the app", "we") handles information when you use the application on your Android device.</p>
-    <p>ITToolkit is a professional network diagnostics toolkit providing DNS lookups, port scanning, traceroute, SSL certificate inspection, HTTP analysis, Wi&#8209;Fi diagnostics, DNS propagation checking and CSV data export.</p>
-    <p>ITToolkit is designed so that the main diagnostic results, preferences and saved items are stored on your device. Some limited data may also be processed by third-party services such as Google Play Billing, Firebase Analytics and Firebase Crashlytics as described in this policy.</p>
+    <p>This Privacy Policy describes how <strong>ITToolkit</strong> ("the app", "we", "us") handles information when you use the application on your Android device.</p>
+    <p>ITToolkit is a network diagnostics toolkit that provides tools such as DNS lookup, port scanning, traceroute, SSL certificate inspection, HTTP analysis, Wi&#8209;Fi diagnostics, DNS propagation checks, speed tests, saved history, monitoring features, and export functions such as CSV and JSON where available.</p>
+    <p>ITToolkit is designed so that most diagnostic activity, preferences, saved items, and exported results remain on your device unless you choose to share them. Some limited data is also processed by Google services used by the app, including Google Play, Firebase Analytics, Firebase Crashlytics, and Firebase Firestore, as described in this policy.</p>
   </section>
 
-  <!-- ── 2. INFORMATION WE ACCESS ── -->
   <section id="s2">
     <h2><span class="section-num">02</span> Information the App May Access</h2>
     <p>Depending on the features you use, ITToolkit may access the following categories of information:</p>
     <ul>
       <li><strong>Network information</strong> — hostnames, domain names, IP addresses, URLs and port numbers entered by you when running diagnostic tools.</li>
-      <li><strong>Wi&#8209;Fi information</strong> — network names (SSIDs), access point identifiers (BSSIDs), signal strength, frequency, channel and nearby network scan results when using the Wi&#8209;Fi Scanner.</li>
-      <li><strong>Location-related access</strong> — location-related permissions used on-device where Android requires them for Wi&#8209;Fi scanning and nearby network results.</li>
-      <li><strong>App state and settings</strong> — user preferences, onboarding completion status, custom DNS resolver settings, free usage counters and Pro upgrade status.</li>
-      <li><strong>User&#8209;entered data</strong> — saved hosts, bookmarks, lookup history and SSL certificate watchlist entries stored at your direction.</li>
-      <li><strong>Crash and performance data</strong> — anonymised diagnostic information collected automatically by Firebase Crashlytics and Firebase Analytics (see Section 6).</li>
+      <li><strong>Wi&#8209;Fi information</strong> — network names (SSIDs), access point identifiers (BSSIDs), signal strength, frequency, channel, connection state and nearby network scan results when using Wi&#8209;Fi features.</li>
+      <li><strong>Location-related access</strong> — location-related permissions used on-device where Android requires them for Wi&#8209;Fi scanning and nearby network discovery.</li>
+      <li><strong>App state and settings</strong> — user preferences, onboarding completion status, custom DNS settings, free usage counters, monitoring settings, and Pro upgrade status.</li>
+      <li><strong>User&#8209;entered data</strong> — saved hosts, bookmarks, lookup history, watchlist entries, and similar diagnostic items stored at your direction.</li>
+      <li><strong>Crash and performance data</strong> — diagnostic information collected automatically by Firebase Crashlytics and Firebase Analytics to help monitor app stability and feature usage.</li>
+      <li><strong>Device-linked usage sync data</strong> — where used by the app, a device identifier together with tool usage counts may be processed through Firebase Firestore to help prevent usage counters being reset after app data is cleared and to maintain app state across installs on the same device.</li>
     </ul>
-    <p>ITToolkit does not track your location continuously and does not retain location history. Location-related access is used only where needed for Wi&#8209;Fi scanning features and nearby network results.</p>
+    <p>ITToolkit does not continuously track your location and does not store location history. Location-related access is used only where needed for Wi&#8209;Fi-related features on Android.</p>
   </section>
 
-  <!-- ── 3. DATA STORED ON DEVICE ── -->
   <section id="s3">
     <h2><span class="section-num">03</span> Data Stored Locally on Your Device</h2>
-    <p>The following data is stored locally on your device to support app functionality:</p>
+    <p>The following data may be stored locally on your device to support app functionality:</p>
     <ul>
-      <li>Lookup history and tool results (Pro feature)</li>
-      <li>Saved hosts and bookmarks (Pro feature)</li>
-      <li>SSL certificate watchlist entries (Pro feature)</li>
+      <li>Lookup history and tool results</li>
+      <li>Saved hosts, bookmarks and watchlist entries</li>
       <li>App preferences and display settings</li>
-      <li>Free usage counters and Pro upgrade status</li>
-      <li>CSV files exported to your device's Downloads folder</li>
+      <li>Free usage counters and Pro upgrade state</li>
+      <li>Notification and monitoring preferences</li>
+      <li>Files you export to your device, such as CSV or JSON files where those export options are available</li>
     </ul>
-    <p>This data remains on your device unless you clear app data or uninstall the application. Exported CSV files are stored only on your device and are never transmitted to the developer.</p>
-    <p>Data processed by third&#8209;party services such as Firebase Analytics, Firebase Crashlytics and Google Play Billing is retained according to those providers' own retention practices and policies. ITToolkit does not directly control the retention period of data processed by those services.</p>
+    <p>This data remains on your device unless you clear app data, remove the relevant content, or uninstall the application. Exported files are stored on your device and are not sent to the developer unless you actively choose to share them using your device or another app.</p>
+    <p>Data processed by Google services such as Firebase Analytics, Firebase Crashlytics, Firebase Firestore and Google Play is retained according to those providers' own retention practices and policies. ITToolkit does not directly control the retention period of data processed by those third-party services.</p>
     <div class="callout">
-      <strong>Encrypted Storage</strong>
-      <p>Pro upgrade status and usage data are protected using Android's EncryptedSharedPreferences with AES&#8209;256 encryption, helping to prevent unauthorised access.</p>
+      <strong>Encrypted local storage</strong>
+      <p>Some local app data, such as Pro status and usage-related settings, is stored using Android's encrypted preferences support to help protect it against unauthorised access on the device.</p>
     </div>
   </section>
 
-  <!-- ── 4. PERMISSIONS ── -->
   <section id="s4">
     <h2><span class="section-num">04</span> Permissions Used</h2>
 
     <h3>Internet</h3>
-    <p>Required to perform all network diagnostic operations including DNS lookups, SSL certificate checks, HTTP inspection, port scanning and traceroute.</p>
+    <p>Required to perform network diagnostic operations including DNS lookups, SSL certificate checks, HTTP inspection, port scanning, traceroute, speed tests, app updates from Google services, and other online diagnostics.</p>
 
     <h3>Network State &amp; Wi&#8209;Fi State</h3>
-    <p>Used to detect network connectivity and read Wi&#8209;Fi connection details for diagnostic tools.</p>
+    <p>Used to detect connectivity and read Wi&#8209;Fi connection details for diagnostic features.</p>
 
     <h3>Access Fine Location</h3>
-    <p>On some Android versions, this permission is required for Wi&#8209;Fi scanning and nearby network results. ITToolkit does not use this permission for continuous location tracking and does not store location history.</p>
+    <p>On some Android versions, this permission is required for Wi&#8209;Fi scanning and nearby network discovery. ITToolkit does not use this permission for continuous location tracking and does not store location history.</p>
 
     <h3>Nearby Wi&#8209;Fi Devices (Android 13+)</h3>
-    <p>Required on Android 13 and above to read Wi&#8209;Fi network names (SSIDs) during scanning. ITToolkit uses this permission only for Wi&#8209;Fi scanning features and not for continuous location tracking.</p>
+    <p>Required on supported Android versions to read nearby Wi&#8209;Fi network details during scanning. ITToolkit uses this permission only for Wi&#8209;Fi-related features.</p>
 
     <h3>Post Notifications</h3>
-    <p>Used solely for optional alerts and reminders generated by app features you enable, including SSL certificate expiry alerts and network monitoring notifications such as public IP change alerts. You can withdraw this permission at any time in your device settings without affecting any other app functionality.</p>
+    <p>Used only for optional alerts and reminders generated by features you enable, such as SSL certificate expiry alerts or network monitoring notifications.</p>
 
     <h3>Vibration</h3>
-    <p>Used for basic haptic feedback and notification behaviour where supported by your device and Android version.</p>
+    <p>Used for haptic feedback and notification behaviour where supported by your device and Android version.</p>
   </section>
 
-  <!-- ── 5. HOW INFORMATION IS USED ── -->
   <section id="s5">
     <h2><span class="section-num">05</span> How Information Is Used</h2>
     <p>Information accessed by ITToolkit is used only for the following purposes:</p>
     <ul>
       <li>Executing the network diagnostic tools you request</li>
-      <li>Displaying Wi&#8209;Fi and network diagnostic information</li>
-      <li>Persisting your preferences, history and saved data locally</li>
-      <li>Generating CSV exports on your device</li>
-      <li>Delivering optional SSL certificate expiry notifications and optional network monitoring alerts such as public IP change notifications</li>
-      <li>Processing in&#8209;app purchases and restoring prior purchases via Google Play</li>
-      <li>Presenting optional in&#8209;app review prompts via Google Play</li>
-      <li>Identifying and resolving application crashes via Firebase Crashlytics</li>
-      <li>Understanding aggregate, anonymised usage patterns to guide future development via Firebase Analytics</li>
+      <li>Displaying Wi&#8209;Fi, network and diagnostic information</li>
+      <li>Saving your preferences, history, bookmarks, monitoring settings and other app state</li>
+      <li>Generating exports on your device in the formats supported by the relevant tool</li>
+      <li>Delivering optional alerts and reminders for features you enable</li>
+      <li>Processing in-app purchases and restoring prior purchases via Google Play</li>
+      <li>Presenting optional in-app review prompts via Google Play</li>
+      <li>Identifying and resolving crashes and performance issues via Firebase Crashlytics</li>
+      <li>Understanding aggregate and anonymised usage patterns via Firebase Analytics to guide future development</li>
+      <li>Maintaining tool usage counts or related app state via Firebase Firestore where device-linked usage sync is enabled in the app build</li>
     </ul>
-    <p>No information is used for advertising, user profiling or marketing purposes.</p>
+    <p>No information is used for advertising, data brokerage, or marketing profiling by the developer.</p>
   </section>
 
-  <!-- ── 6. EXTERNAL NETWORK REQUESTS ── -->
   <section id="s6">
     <h2><span class="section-num">06</span> External Network Requests</h2>
-    <p>As a network diagnostic application, ITToolkit initiates outbound connections as a direct consequence of the tools you use. The following connections may be made:</p>
+    <p>As a network diagnostics application, ITToolkit makes outbound connections as a direct consequence of the tools and features you use. Depending on the feature, the following connections may be made:</p>
     <ul>
-      <li>DNS tools query the resolver specified by you (default or custom)</li>
+      <li>DNS tools query the resolver specified by you, including custom resolvers where supported</li>
       <li>HTTP Inspector connects to URLs you provide</li>
-      <li>SSL Checker connects to the domain you specify to retrieve certificate data</li>
-      <li>Port Scanner and Traceroute connect to hosts and IPs you enter</li>
-      <li>DNS Propagation checks query multiple public resolvers worldwide</li>
-      <li>Speed Test connects to Cloudflare measurement endpoints</li>
+      <li>SSL tools connect to the host or domain you specify to retrieve certificate data</li>
+      <li>Port Scanner and Traceroute connect to the hosts and IPs you enter</li>
+      <li>DNS propagation checks may query multiple public resolvers worldwide</li>
+      <li>Speed test functionality may connect to third-party measurement endpoints</li>
       <li>Google Play handles billing, purchase restoration and review prompts</li>
     </ul>
-    <p>Connections initiated by ITToolkit use the network protocol required by the diagnostic tool you select. Where applicable, secure HTTPS connections are used. Other tools may use DNS, TCP, SSL/TLS handshakes, ICMP&#8209;equivalent network diagnostics, or user&#8209;specified protocols and ports as required by the test you run.</p>
+    <p>Connections initiated by ITToolkit use the network protocol required by the selected tool or test. Where applicable, secure HTTPS or TLS connections are used. Other tools may use DNS, TCP, SSL/TLS handshakes, ICMP-equivalent diagnostics, or user-specified protocols and ports as required by the test you run.</p>
 
     <h3>Firebase Analytics &amp; Crashlytics</h3>
-    <p>ITToolkit uses Firebase Analytics and Firebase Crashlytics, services operated by Google LLC. These services automatically collect the following anonymised data:</p>
+    <p>ITToolkit uses Firebase Analytics and Firebase Crashlytics, services operated by Google. These services may automatically process data such as:</p>
     <ul>
-      <li>Crash reports and diagnostic stack traces when the app encounters an error</li>
-      <li>App performance and stability metrics</li>
-      <li>Anonymised usage events indicating which tools are accessed (no user&#8209;entered content is included)</li>
+      <li>Crash reports and stack traces when the app encounters an error</li>
+      <li>App stability and performance metrics</li>
+      <li>Usage events showing which app areas or tools are opened or used, without including the content of the hostnames, URLs, domains, or other diagnostic targets you manually enter</li>
     </ul>
-    <p>This data is transmitted to Google's servers and is subject to <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a>. It is used solely for app stability and improvement and is not used for advertising or sold to any third party.</p>
+    <p>This data is used to improve app quality, reliability and usability. It is not used by the developer for advertising or sold by the developer to third parties.</p>
+
+    <h3>Firebase Firestore usage sync</h3>
+    <p>ITToolkit may use Firebase Firestore to store limited app state relating to usage control and restoration. Where this feature is used, the stored data may include a device-linked identifier and tool usage counts. This helps prevent free usage counters from being reset simply by clearing app data and helps preserve relevant app state on the same device.</p>
+    <p>This usage-sync data is not used to analyse the content of your diagnostic lookups. It is used only for app operation, entitlement handling, and usage-limit enforcement.</p>
   </section>
 
-  <!-- ── 7. DATA SHARING ── -->
   <section id="s7">
     <h2><span class="section-num">07</span> Data Sharing</h2>
 
@@ -437,78 +426,77 @@ footer p {
       </thead>
       <tbody>
         <tr>
-          <td>Google (Firebase)</td>
-          <td>Anonymised crash reports and usage events</td>
-          <td>App stability and improvement</td>
+          <td>Google (Firebase Analytics / Crashlytics)</td>
+          <td>Crash reports, performance data and anonymised usage events</td>
+          <td>App stability, diagnostics and product improvement</td>
+        </tr>
+        <tr>
+          <td>Google (Firebase Firestore)</td>
+          <td>Device-linked usage state, such as usage counts and related identifiers where the feature is enabled in the app build</td>
+          <td>Usage-limit enforcement and app state restoration</td>
         </tr>
         <tr>
           <td>Google Play</td>
-          <td>Purchase tokens</td>
+          <td>Purchase and entitlement data needed for billing, upgrades and restoration</td>
           <td>Billing and purchase restoration</td>
         </tr>
         <tr>
-          <td>User&#8209;specified hosts</td>
-          <td>Network requests you initiate</td>
-          <td>Execution of diagnostic tools</td>
+          <td>User-specified hosts and services</td>
+          <td>Network requests you initiate through the diagnostic tools</td>
+          <td>Execution of the requested diagnostic test</td>
         </tr>
       </tbody>
     </table>
 
-    <p>ITToolkit does not sell personal data. The app does not share user data with third parties for advertising, tracking or profiling purposes.</p>
+    <p>ITToolkit does not sell personal data. The app is not designed to share your data with third parties for advertising, behavioural profiling, or cross-app tracking by the developer.</p>
   </section>
 
-  <!-- ── 8. SECURITY ── -->
   <section id="s8">
     <h2><span class="section-num">08</span> Security</h2>
-    <p>The following measures are in place to protect your data:</p>
+    <p>The following measures are in place to help protect your data:</p>
     <ul>
-      <li>Sensitive local data (Pro status, usage counts) is stored using AES&#8209;256 EncryptedSharedPreferences</li>
-      <li>Outbound connections use the secure or diagnostic protocol required by the selected tool, including HTTPS where applicable</li>
-      <li>No personal data is transmitted to the developer's servers</li>
+      <li>Some sensitive local app data is stored using Android encrypted preferences support</li>
+      <li>Outbound connections use the secure or diagnostic protocol required by the selected tool, including HTTPS or TLS where applicable</li>
+      <li>The developer does not operate a separate custom backend for storing your diagnostic targets or exported results</li>
     </ul>
-    <p>Whilst these measures are in place, no system can be guaranteed completely secure. In the event of a security concern, please contact support@ittoolkit.app.</p>
+    <p>While reasonable safeguards are used, no system can be guaranteed completely secure. If you believe there is a security issue affecting ITToolkit, please contact support@ittoolkit.app.</p>
   </section>
 
-  <!-- ── 9. YOUR RIGHTS ── -->
   <section id="s9">
-    <h2><span class="section-num">09</span> Your Rights (UK GDPR)</h2>
-    <p>If you are located in the United Kingdom, you have rights under the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018, including the right to:</p>
+    <h2><span class="section-num">09</span> Your Rights</h2>
+    <p>If you are located in the United Kingdom, European Economic Area or another jurisdiction with applicable data protection rights, you may have rights including the right to access, correct, delete, restrict, or object to certain processing of your personal data, subject to local law.</p>
     <ul>
-      <li>Access personal data held about you</li>
+      <li>Access data held about you</li>
       <li>Request correction of inaccurate data</li>
-      <li>Request deletion of your personal data</li>
-      <li>Object to or restrict processing of your data</li>
+      <li>Request deletion of relevant personal data</li>
+      <li>Object to or restrict certain processing</li>
+      <li>Raise a complaint with your local supervisory authority where applicable</li>
     </ul>
-    <p>As the majority of data processed by ITToolkit is stored locally on your own device, you can exercise your right to deletion at any time by clearing the app's data in your device settings or by uninstalling the application.</p>
-    <p>For data held by third&#8209;party services such as Firebase, please refer to <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a> and their available data deletion tools.</p>
-    <p>To exercise any of the above rights or to raise a concern, please contact us at <a href="mailto:support@ittoolkit.app">support@ittoolkit.app</a>.</p>
+    <p>Because much of the app data is stored locally on your device, you can often remove it directly by clearing the app's data, removing saved items inside the app, or uninstalling the app. For data processed by Google services such as Firebase or Google Play, please also refer to Google's privacy documentation and available account or data controls.</p>
+    <p>To contact us about privacy questions or requests, email <a href="mailto:support@ittoolkit.app">support@ittoolkit.app</a>.</p>
   </section>
 
-  <!-- ── 10. CHILDREN'S PRIVACY ── -->
   <section id="s10">
     <h2><span class="section-num">10</span> Children's Privacy</h2>
-    <p>ITToolkit is not directed at children under the age of 13 and does not knowingly collect personal information from children. If you believe a child under 13 has provided personal information through the app, please contact us at <a href="mailto:support@ittoolkit.app">support@ittoolkit.app</a> and we will take appropriate steps to remove that information.</p>
+    <p>ITToolkit is not directed at children under the age of 13 and is not intended to knowingly collect personal information from children. If you believe a child has provided personal information through the app, please contact us at <a href="mailto:support@ittoolkit.app">support@ittoolkit.app</a>.</p>
   </section>
 
-  <!-- ── 11. CHANGES ── -->
   <section id="s11">
     <h2><span class="section-num">11</span> Changes to This Policy</h2>
-    <p>This Privacy Policy may be updated from time to time to reflect changes in the app's functionality or applicable law. The date at the top of this document will be updated whenever a change is made. Continued use of the app after an updated policy is posted constitutes your acceptance of those changes.</p>
+    <p>This Privacy Policy may be updated from time to time to reflect changes in the app, changes in third-party services used by the app, or changes in applicable law. The date at the top of this document will be updated whenever a change is made.</p>
     <p>We encourage you to review this policy periodically.</p>
   </section>
 
-  <!-- ── 12. CONTACT ── -->
   <section id="s12">
     <h2><span class="section-num">12</span> Contact</h2>
-    <p>If you have any questions, concerns or requests regarding this Privacy Policy or the handling of your data, please contact:</p>
+    <p>If you have any questions, concerns or requests regarding this Privacy Policy or how ITToolkit handles data, please contact:</p>
     <p><strong>Email:</strong> <a href="mailto:support@ittoolkit.app">support@ittoolkit.app</a></p>
-    <p>We aim to respond to all enquiries within 5 working days.</p>
+    <p>We aim to respond to genuine enquiries within a reasonable time.</p>
   </section>
 
-  <!-- ── FOOTER ── -->
   <footer>
     <p>© 2026 ITToolkit. All rights reserved.</p>
-    <p>Last Updated: 17 March 2026</p>
+    <p>Last Updated: 6 April 2026</p>
   </footer>
 
 </div>
